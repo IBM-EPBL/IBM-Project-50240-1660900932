@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parkinson Prediction using ML</title>
+
+  <link rel="stylesheet" href="../static/css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a onclick="closeMenu()" href="#home">Home</a>
+          </li>
+          <li><a onclick="closeMenu()" href="#services">Info</a></li>
+          <li><a onclick="closeMenu()" href="#about">Predict</a></li>
+        </ul>
+
+        <!-- <a class="button" onclick="closeMenu()" href="#contact">Agende sua consulta</a> -->
+
+
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>Welcome to my IBM Project👋</h4>
+          <h1>Parkinson Disease prediction using ML</h1>
+        </header>
+
+        <div class="content">
+          <p>
+            Parkinson's disease is a progressive disorder that affects the nervous system and the parts of the body
+            controlled by the nerves. Symptoms start slowly. The first symptom may be a barely noticeable tremor in just
+            one hand. Tremors are common, but the disorder may also cause stiffness or slowing of movement.
+          </p>
+
+
+
+
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="../static/assets/parkinson.png"
+          alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo" />
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>9.4M PD</h3>
+          <p>Parkinson's disease world 2017-22 percentage</p>
+        </div>
+
+        <div class="stat">
+          <h3>6.4M PD</h3>
+          <p>Asia 2017-2022 persentage</p>
+        </div>
+
+        <div class="stat">
+          <h3>6.0PD</h3>
+          <p>India 2017-2022 persentage</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h4>Info</h4>
+        <h2>Symptoms of Parkinson</h2>
+      </header>
+
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Slowed movement (bradykinesia)</h3>
+            <p>
+              Over time, Parkinson's disease may slow your movement, making simple tasks difficult and time-consuming.
+              Your steps may become shorter when you walk. It may be difficult to get out of a chair. You may drag or
+              shuffle your feet as you try to walk.
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Rigid muscles</h3>
+            <p>
+              Muscle stiffness may occur in any part of your body. The stiff muscles can be painful and limit your
+              range of motion.
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Impaired posture and balance</h3>
+            <p>
+              Your posture may become stooped. Or you may fall or have balance problems as a result of
+              Parkinson's disease
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Loss of automatic movements</h3>
+            <p>
+              You may have a decreased ability to perform unconscious movements, including blinking, smiling or swinging
+              your arms when you walk.
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Speech changes</h3>
+            <p>
+              You may speak softly, quickly, slur or hesitate before talking. Your speech may be more of a monotone
+              rather than have the usual speech patterns.
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Writing changes</h3>
+            <p>
+              It may become hard to write, and your writing may appear small.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>Fill Urself</h4>
+          <h2>Fill these </h2>
+        </header>
+
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maxime, eligendi eveniet accusantium debitis
+            excepturi iure reprehenderit distinctio quidem quibusdam suscipit dolor explicabo esse qui eos assumenda cum
+            adipisci ratione?
+          </p>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="../static/assets/doutor-feliz-segurando-prancheta-com-pacientes.png"
+          alt="Doutor feliz segurando prancheta com pacientes" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- ScrollReaveal Lib -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../static/js/main.js"></script>
+</body>
+
+</html>
