@@ -17,12 +17,7 @@ def upload():
         basepath = os.path.dirname('__file__')
         filepath = os.path.join(basepath, "uploads", f.filename)
         f.save(filepath)
-        print(str(request.form['imageType']) == 'spiral')
-        if str(request.form['imageType'] == 'spiral'):
-            model = pickle.loads(open('parkinson-spiral-model.pkl','rb').read())
-            print("sprial")
-        else:
-            model = pickle.loads(open('parkinson-wave-model.pkl','rb').read())
+        model = pickle.loads(open('parkinson.pkl','rb').read())
         image = cv2.imread(filepath)   
         output = image.copy()
         output =cv2.resize(output, (128, 128))

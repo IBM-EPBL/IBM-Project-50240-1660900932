@@ -215,14 +215,6 @@
           <!-- <button type="button" id="btn-predict" onclick="predict()">Predict</button> -->
           <form action = "http://localhost:5555/predict" method = "POST" id="form-data"
           enctype = "multipart/form-data">
-          <legend>Type for upload image:</legend>
-              <div style="padding: 10px;">
-                <input type="radio" id="imageChoice1" name="imageType" value="spiral" />
-                <label for="contactChoice1">Sprial</label>
-          
-                <input type="radio" id="imageChoice2" name="imageType" value="Wave"/>
-                <label for="contactChoice2">Wave</label>
-              </div>
           <input type = "file" name = "file" onchange="imageChange(event)" style="padding:10px"/>
           <input type = "submit" value="Predict" class="button"/>
           </form>
